@@ -1,0 +1,19 @@
+<div>
+	<h3 class="related-content-title">
+	  related galleries
+	</h3>
+	<ul class="related-list">
+	  <li class="related-item" ng-repeat="item in relatedGalleries.items">
+	    <a ng-href="{{items.url}}">
+	      <div class="item-thumb">
+	        <img ng-src="{{item.imageurl[0]}}" ng-attr-alt="{{item.title}}"/>
+	        <span class="item-number">15</span>
+	      </div><!--
+	      --><div class="item-details">
+	        <h4 class="item-title">{{item.title}}</h4>
+	        <p class="item-tag" ng-if="relatedGalleries.tag">{{relatedGalleries.tag}}</p>
+	      </div>
+	    </a>
+	  </li>
+	</ul>
+</div>

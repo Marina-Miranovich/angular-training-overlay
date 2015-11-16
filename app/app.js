@@ -1,0 +1,1 @@
+var overlayApp = angular.module('overlayApp', ['ngDialog']);

@@ -1,0 +1,46 @@
+<div class="overlay-layout" ng-class="{'grid-opened': overlayData.isGridOpened}">
+  <div class="overlay-wide-ad">Wide ad lives here</div>
+  <div class="overlay-left-column">
+    <div class="overlay-hero-slider">
+      <div class="overlay-gallery-title">
+        <div class="overlay-gallery-title-text">Timberwolves were lucky they didn't face Clippers or Spurs in playoffs</div>
+        <div class="overlay-gallery-title-byline">By Jose Jauregui </div>
+      </div>
+      <div class="hero-carousel-wrapper">
+        <ul class="hero-carousel">
+          <li class="item" ng-repeat="item in overlayData.items" ng-class="{current: carousel.currentItem == $index}">
+            <!-- TODO in sert image here
+            <img ng-src=""/>
+          -->
+          </li>
+        </ul>
+        <div class="carousel-count" ng-if="overlayData.items.length">
+          <span class="current-page">{{carousel.currentItem + 1}}</span> / <span class="total-pages">{{overlayData.items.length}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="overlay-desc-wrapper">
+      <div class="overlay-desc-slider">
+        <div class="caption-carousel">
+          <div class="item" ng-repeat="item in overlayData.items track by $index" ng-class="{current: carousel.currentItem == $index}">
+            <div class="gallery-caption-container">
+              <!-- TODO insert index and title here
+              <h4 class="gallery-caption-title"><span class="gallery-list-number">[[index]]</span>[[title]]</h4>
+            -->
+              <div class="gallery-caption-text">
+                <!-- TODO insert description here
+                <p>[[description]]</p>
+              -->
+                <p class="gallery-photo-byline">Alex Marvez Photo: Rob Carr | Gerry Images North America</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--
+      --><div class="overlay-square-ad">
+        <div class="square-ad">Square ad is here</div>
+      </div>
+    </div>
+  </div><!--
+  --><related-galleries class="overlay-related-content overlay-right-column"></related-galleries>
+</div>

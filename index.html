@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Overlay</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://www.foxsports.com/foxbox/Static/Style/bundles/Css?v=fqSA7pxjMhplfxF48tlrUuz1GjD94uNus0tVqDHPBuM1&vt=20150507000000
+">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.5.5/css/ngDialog.min.css">
+		<link rel="stylesheet" href="styles/css/owl.carousel.css">
+		<link rel="stylesheet" href="styles/css/main.css">
+	</head>
+	<body ng-app="overlayApp">
+		<div ng-controller="marqueeCtrl as marquee" class="marguee" ng-click="marquee.openOverlay();">
+			Click me!
+		</div>
+		
+		
+<!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+<!-- bower:js -->
+<script src="app/bower_components/angular/angular.js"></script>
+<script src="app/bower_components/ng-dialog/js/ngDialog.js"></script>
+<!-- endinject -->
+
+<!-- <script src="app/libs/owl.carousel.js"></script> -->
+
+<!-- inject:js -->
+<script src="app/app.js"></script>
+<script src="app/components/related_galleries/relatedGalleriesService.js"></script>
+<script src="app/components/related_galleries/relatedGalleriesDirective.js"></script>
+<script src="app/components/related_galleries/relatedGalleriesController.js"></script>
+<script src="app/components/overlay/overlayController.js"></script>
+<script src="app/components/marquee/marqueeController.js"></script>
+<script src="app/components/carousel/syncCarouselsService.js"></script>
+<script src="app/components/carousel/carouselDirective.js"></script>
+<script src="app/components/carousel/carouselController.js"></script>
+<!-- endinject -->
+	</body>
+</html>
