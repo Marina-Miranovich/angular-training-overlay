@@ -14,7 +14,7 @@
 			setTimeout( function () {
 				$(opt.elem).owlCarousel({
 					singleItem: true,
-					navigation: opt.isHero,
+					navigation: true,
 					pagination: false,
 					responsiveRefreshRate: 200,
 					slideSpeed: 1000,
